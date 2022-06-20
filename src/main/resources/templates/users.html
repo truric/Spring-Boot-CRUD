@@ -10,8 +10,13 @@
 <div class="container-fluid text-center">
     <h1>User list</h1>
     <div class="m-2">
-        <a class="h4 mr-3" th:href="@{'users/new}">Add New User</a>
+        <a class="h4 mr-3" th:href="@{users/new}">Add New User</a>
     </div>
+
+    <div th:if="${message}" class="alert alert-success text-center">
+        [[${message}]]
+    </div>
+
     <table class="table table-bordered">
         <thead class="thead-dark">
             <tr>

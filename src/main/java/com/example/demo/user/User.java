@@ -16,6 +16,7 @@ public class User {
     private String email;
     @Column(name = "password", nullable = false, length = 15)
     private String password;
+    private boolean enabled = false;
 
     public Long getId() {
         return id;
@@ -66,5 +67,13 @@ public class User {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 }

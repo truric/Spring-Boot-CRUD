@@ -58,7 +58,7 @@ public class UserRepositoryTests {
 
     @Test
     public void testGet() {
-        Long userId = Long.valueOf(2);
+        Long userId = Long.valueOf(4);
         Optional<User> optionalUser = repo.findById(userId);
         User user = optionalUser.get();
 
@@ -68,7 +68,7 @@ public class UserRepositoryTests {
 
     @Test
     public void testDelete() {
-        Long userId = Long.valueOf(2);
+        Long userId = Long.valueOf(5);
         repo.deleteById(userId);
 
         Optional<User> optionalUser = repo.findById(userId);

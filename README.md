@@ -1,4 +1,4 @@
-# Spring Boot JPA revision
+# Spring Boot CRUD application
 
 ## About
 The following repo contains a Spring Boot CRUD example, without the use of postman/insomnia, but as a web application.
